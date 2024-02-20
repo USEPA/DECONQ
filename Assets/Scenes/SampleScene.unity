@@ -686,6 +686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930c30e7b2e0b59418ad59cf9251b7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position: 4
   questionSource: {fileID: 809937286}
   pointer: 0
   correct: {r: 0.14117648, g: 0.68235296, b: 0.2627451, a: 1}
@@ -695,13 +696,6 @@ MonoBehaviour:
   - {fileID: 682206861}
   - {fileID: 1092440921}
   - {fileID: 1432662191}
-  answer:
-  - Stress Relief
-  - World of Warcraft
-  - Motion Sensors
-  - Doom Raider
-  - Brussels Sprouts
-  isAnswer: 0001000000
 --- !u!114 &255649115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1613,6 +1607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930c30e7b2e0b59418ad59cf9251b7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position: 1
   questionSource: {fileID: 809937286}
   pointer: 0
   correct: {r: 0.14117648, g: 0.68235296, b: 0.2627451, a: 1}
@@ -1622,13 +1617,6 @@ MonoBehaviour:
   - {fileID: 1092440921}
   - {fileID: 1432662191}
   - {fileID: 255649114}
-  answer:
-  - Entertainment only
-  - Minecraft
-  - VR Headsets
-  - Tactical Doom
-  - Squash
-  isAnswer: 0000010000
 --- !u!224 &682206862
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1781,7 +1769,6 @@ MonoBehaviour:
   - {fileID: 1092440921}
   - {fileID: 1432662191}
   - {fileID: 255649114}
-  question: []
   pointer: 0
   answered: 0
   correct: 0
@@ -2755,6 +2742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930c30e7b2e0b59418ad59cf9251b7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position: 2
   questionSource: {fileID: 809937286}
   pointer: 0
   correct: {r: 0.14117648, g: 0.68235296, b: 0.2627451, a: 1}
@@ -2764,13 +2752,6 @@ MonoBehaviour:
   - {fileID: 682206861}
   - {fileID: 1432662191}
   - {fileID: 255649114}
-  answer:
-  - Education and training
-  - The Sims
-  - Gaming laptops
-  - Doom Ops
-  - Mashed Potatoes
-  isAnswer: 0100000000
 --- !u!224 &1092440922
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3181,6 +3162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930c30e7b2e0b59418ad59cf9251b7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position: 3
   questionSource: {fileID: 809937286}
   pointer: 0
   correct: {r: 0.14117648, g: 0.68235296, b: 0.2627451, a: 1}
@@ -3190,13 +3172,6 @@ MonoBehaviour:
   - {fileID: 682206861}
   - {fileID: 1092440921}
   - {fileID: 255649114}
-  answer:
-  - Online competition
-  - Fortnite
-  - AR Glasses
-  - Marine Doom
-  - Anchovies
-  isAnswer: 0000000100
 --- !u!114 &1432662192
 MonoBehaviour:
   m_ObjectHideFlags: 0

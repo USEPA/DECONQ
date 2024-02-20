@@ -86,7 +86,6 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.OpenXR.Features.Interactions.OculusTouchControllerProfile
     - UnityEngine.XR.OpenXR.Features.Interactions.ValveIndexControllerProfile
     - UnityEngine.XR.OpenXR.OpenXRLoader
-    - UnityEngine.XR.OpenXR.OpenXRRestarter
     - UnityEngine.XR.OpenXR.OpenXRSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -704,7 +703,7 @@ ScriptsOnlyBuild:
     className: TunnelingVignetteController
   - hash:
       serializedVersion: 2
-      Hash: 768fe21de1d18929b336f4ced45b7d80
+      Hash: 7abb3735c1b79ffea85cca916addefc6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QuestionsScript
@@ -1142,7 +1141,7 @@ ScriptsOnlyBuild:
     className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
-      Hash: 8bb0d614a91147a99463154fdcab25b8
+      Hash: 867b6e3a36eeee183fba8ed89c1d0a3e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnswersScript
@@ -2241,4 +2240,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/OneDrive/Desktop/project/VR/Demo/Decon Questionnaire/DeconQuestionnaire_V0.6.apk
+  playerPath: D:/OneDrive/Desktop/project/VR/Demo/Decon Questionnaire/DeconQuestionnaire_V1.0.apk

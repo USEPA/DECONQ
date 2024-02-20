@@ -1,0 +1,10 @@
+﻿Values,Q1,Q2,Q3,Q4,Q5,Q6
+Question,Serious games are primarily designed for which purpose?,"Which mainstream game has been referenced for its unintended role in modeling disease spread, offering insights into epidemiology?","With the reduction in costs for gaming hardware, which device has specifically gained significant attention for its application in serious gaming due to immersive experiences?",What was the name of the modified version of 'Doom' that was used by the United States military for training?,What is Jordan's favorite food?,Which is correct?
+Answer1,Entertainment only,Minecraft,VR Headsets,Tactical Doom,Pizza,"A, B"
+Correct1,0,0,1,0,0,0
+Answer2,Education and training,The Sims,Gaming laptops,Doom Ops,Mashed Potatoes,"B, C"
+Correct2,1,0,0,0,0,0
+Answer3,Online competition,Fortnite,AR Glasses,Marine Doom,Mac & Cheese,"C, D"
+Correct3,0,0,0,1,0,1
+Answer4,Stress Relief,World of Warcraft,Motion Sensors,Doom Raider,Sushi,"D, E"
+Correct4,0,1,0,0,1,0
