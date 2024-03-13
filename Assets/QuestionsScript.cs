@@ -16,7 +16,7 @@ public class QuestionsScript : MonoBehaviour
     public int numQuestions;
     public PullThePlank plank;
     private int incorrect;
-    private int allowed_fails;
+    public int allowed_fails;
     TMPro.TextMeshProUGUI script;
     private child subtitle;
     
@@ -25,10 +25,9 @@ public class QuestionsScript : MonoBehaviour
     void Start()
     {
         incorrect = 0;
-        allowed_fails = 1;
         pointer = -1;
         var dataset = Resources.Load<TextAsset>("Questions");
-        var rows = dataset.text.Split('\n');
+        var rows = Regex.Split(dataset.text, "\n(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
         var data = Regex.Split(rows[1], ",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
         question = data[1..];
         numQuestions = question.Length;
@@ -44,7 +43,19 @@ public class QuestionsScript : MonoBehaviour
         subtitle = GetComponentInChildren<child>();
         answered = false;
         //next.gameObject.SetActive(false);
-        correct = true;
+        //script.text = rows[10].Split(',')[1];
+        string[] title_parts = rows[10].Split(',')[1..];
+        string title = "";
+        for (int i = 0; i < title_parts.Length; i++)
+        {
+            if (!string.IsNullOrWhiteSpace(title_parts[i]))
+            {
+                title = string.Join('\n',title, title_parts[i]);
+            }
+        }
+        script.text = title;
+        
+        allowed_fails = int.Parse(rows[11].Split(',')[1]);
     }
 
     // Update is called once per frame
@@ -63,20 +74,6 @@ public class QuestionsScript : MonoBehaviour
             subtitle.gameObject.SetActive(false);
             script.alignment = TMPro.TextAlignmentOptions.Center;
         }
-        if (!correct) //Add potential for multiple incorrect
-        {
-            incorrect += 1;
-            if (incorrect >= allowed_fails)
-            {
-                plank.PullOut();
-                pointer = numQuestions;
-            }
-            else
-            {
-                //add plank wiggle or something
-            }
-            
-        }
         if (pointer < numQuestions-1)
         {
             pointer += 1;
@@ -94,5 +91,22 @@ public class QuestionsScript : MonoBehaviour
                 answers[i].FinalCall();
             }
         }
+    }
+
+    public void WrongAnswer()
+    {
+        incorrect += 1;
+        if (incorrect >= allowed_fails)
+        {
+            plank.PullOut();
+            pointer = numQuestions;
+            next.gameObject.SetActive(false);
+        }
+        else
+        {
+            plank.anim.Play("Base Layer.Wobble");
+        }
+        
+        //Do something
     }
 }

@@ -7,6 +7,7 @@ public class PullThePlank : MonoBehaviour
 
     float x, y, z;
     private bool incorrect;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class PullThePlank : MonoBehaviour
         y = gameObject.transform.position.y;
         z = gameObject.transform.position.z;
         incorrect = false;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,10 +29,15 @@ public class PullThePlank : MonoBehaviour
             //gameObject.transform.position.Set(x, y, z);
             gameObject.transform.position = new Vector3(x, y, z);
         }
+        //if (anim != null)
+        //{
+        //    anim.Play("Base Layer.Wobble", 0,0);
+        //}
     }
 
     public void PullOut()
     {
         incorrect = true;
+        anim.enabled = false;
     }
 }

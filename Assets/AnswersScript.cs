@@ -27,7 +27,7 @@ public class AnswersScript : MonoBehaviour
         pointer = -1;
         var ansRow = position * 2;
         var dataset = Resources.Load<TextAsset>("Questions");
-        var rows = dataset.text.Split('\n');
+        var rows = Regex.Split(dataset.text, "\n(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
         var data = Regex.Split(rows[ansRow], ",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
         answer = data[1..];
         var data2 = rows[ansRow + 1].Split(',');
@@ -80,7 +80,7 @@ public class AnswersScript : MonoBehaviour
         else
         {
             image.color = wrong;
-            questionSource.correct = false;
+            questionSource.WrongAnswer();
         }
         
     }

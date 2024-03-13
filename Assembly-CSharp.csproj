@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9667DE75-0A7B-D2C5-5BDF-FFE267EF7B0F}</ProjectGuid>
+    <ProjectGuid>{45EA37D5-B1E4-76AB-5763-9A09492BC53D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -957,7 +957,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj">
-      <Project>{BC1AFBEE-857A-24EB-162B-1D6C243BBE99}</Project>
+      <Project>{C28C3477-4A4B-9EE3-A37A-AEE388923885}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets</Name>
     </ProjectReference>
   </ItemGroup>
