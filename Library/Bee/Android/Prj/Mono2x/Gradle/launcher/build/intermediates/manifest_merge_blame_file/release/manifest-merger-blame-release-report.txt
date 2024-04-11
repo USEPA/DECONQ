@@ -3,7 +3,7 @@
 3    package="com.EPA.DeconQuestionnaire"
 4    android:installLocation="auto"
 5    android:versionCode="1"
-6    android:versionName="1.2" >
+6    android:versionName="1.5" >
 7
 8    <uses-sdk
 9        android:minSdkVersion="29"
