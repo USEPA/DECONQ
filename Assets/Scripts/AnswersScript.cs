@@ -26,13 +26,16 @@ public class AnswersScript : MonoBehaviour
     {
         pointer = -1;
         var ansRow = position * 2;
+        //load the data from the Questions csv, split by newline to seperate the rows, then split by comma to get the individual answers
+        //the answer row to pull from is determined by each answer button's position
         var dataset = Resources.Load<TextAsset>("Questions");
         var rows = Regex.Split(dataset.text, "\n(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
         var data = Regex.Split(rows[ansRow], ",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
         answer = data[1..];
+        //collect the associated set of answers and correct value
         var data2 = rows[ansRow + 1].Split(',');
         var corectString = data2[1..];
-
+        //clean up the answers by removing quotation marks
         for (int i = 0; i < answer.Length; i++)
         {
             answer[i] = answer[i].Replace("\"", string.Empty);
@@ -56,8 +59,6 @@ public class AnswersScript : MonoBehaviour
         select = GetComponent<Button>();
         original = image.color;
         select.enabled = false;
-        //pointer = 0;
-        //script.text = answer[pointer];
     }
 
     // Update is called once per frame

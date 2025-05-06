@@ -1,0 +1,12 @@
+Values,Q1,Q2,Q3,Q4,Q5
+Question,Serious games are primarily designed for which purpose?,"Which mainstream game has been referenced for its unintended role in modeling disease spread, offering insights into epidemiology?","With the reduction in costs for gaming hardware, which device has specifically gained significant attention for its application in serious gaming due to immersive experiences?",What was the name of the modified version of 'Doom' that was used by the United States military for training?,What is Tim’s favorite food?
+Answer1,Entertainment Only,Minecraft,VR Headsets,Tactical Doom,Squash
+Correct1,0,0,1,0,0
+Answer2,Education and Training,The Sims,Motion Sensors,Doom Ops,Mashed Potatoes
+Correct2,1,0,0,0,0
+Answer3,Online Competition,Fortnite,Gaming Laptops,Marine Doom,Anchovies
+Correct3,0,0,0,1,0
+Answer4,Virtual Reality Experiences,World of Warcraft,AR Glasses,Doom Raider,Brussels Sprouts
+Correct4,0,1,0,0,0
+Title,Decontamination Questionnaire ,,,,
+# Allowed Wrong Answers,1,,,,

@@ -5,12 +5,11 @@ using UnityEngine.XR;
 
 public class Player : MonoBehaviour
 {
-
     public Material sky;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Water")
+        if (other.tag == "Water")               //When the player enters the water, apply fog and other underwater effects
         {
             Rigidbody body = GetComponent<Rigidbody>();
             body.drag = 5;

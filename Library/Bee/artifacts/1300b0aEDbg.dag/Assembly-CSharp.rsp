@@ -377,9 +377,6 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.SpatialTracking.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
-"Assets/AnswersScript.cs"
-"Assets/CausticAnimation.cs"
-"Assets/child.cs"
 "Assets/NastyWizard_Depth/Demo/PostProcessing/Runtime/Attributes/GetSetAttribute.cs"
 "Assets/NastyWizard_Depth/Demo/PostProcessing/Runtime/Attributes/MinAttribute.cs"
 "Assets/NastyWizard_Depth/Demo/PostProcessing/Runtime/Attributes/TrackballAttribute.cs"
@@ -429,11 +426,13 @@
 "Assets/NastyWizard_Depth/Water/PostProcessingWater.cs"
 "Assets/NastyWizard_Depth/Water/WaterVolume.cs"
 "Assets/Oculus Hands/Animations/HandAnimatorController.cs"
-"Assets/Player.cs"
-"Assets/Pointer.cs"
-"Assets/PullThePlank.cs"
-"Assets/QuestionsScript.cs"
-"Assets/XRPlatformControllerSetup.cs"
+"Assets/Scripts/AnswersScript.cs"
+"Assets/Scripts/CausticAnimation.cs"
+"Assets/Scripts/Player.cs"
+"Assets/Scripts/Pointer.cs"
+"Assets/Scripts/PullThePlank.cs"
+"Assets/Scripts/QuestionsScript.cs"
+"Assets/Scripts/XRPlatformControllerSetup.cs"
 -langversion:9.0
 
 /deterministic

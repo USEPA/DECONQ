@@ -20,26 +20,20 @@ public class Pointer : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        //turn on or off the laser pointer depending on what state the trigger button is in
         if (controller.selectInteractionState.activatedThisFrame)
         {
-            StartRay();
+            RayStatus(true);
         }
         if (controller.selectInteractionState.deactivatedThisFrame)
         {
-            StopRay();
+            RayStatus(false);
         }
     }
 
-    public void StartRay()
+    private void RayStatus(bool status)
     {
-        ray.enabled = true;
+        ray.enabled = status;
     }
-
-    public void StopRay()
-    {
-        ray.enabled = false;
-    }
-
-    
 }

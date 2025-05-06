@@ -56,26 +56,25 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\child.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Water\NastyWater.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
-    <Compile Include="Assets\QuestionsScript.cs" />
+    <Compile Include="Assets\Scripts\QuestionsScript.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\PostProcessingProfile.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\PostProcessingContext.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
-    <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\BloomComponent.cs" />
-    <Compile Include="Assets\PullThePlank.cs" />
+    <Compile Include="Assets\Scripts\PullThePlank.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\DitheringComponent.cs" />
-    <Compile Include="Assets\AnswersScript.cs" />
+    <Compile Include="Assets\Scripts\AnswersScript.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\PostProcessingComponent.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
-    <Compile Include="Assets\XRPlatformControllerSetup.cs" />
+    <Compile Include="Assets\Scripts\XRPlatformControllerSetup.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\BloomModel.cs" />
-    <Compile Include="Assets\Pointer.cs" />
+    <Compile Include="Assets\Scripts\Pointer.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\FxaaComponent.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
@@ -93,7 +92,7 @@
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\VignetteModel.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\GrainModel.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\PostProcessingModel.cs" />
-    <Compile Include="Assets\CausticAnimation.cs" />
+    <Compile Include="Assets\Scripts\CausticAnimation.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\GrainComponent.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\UserLutModel.cs" />
     <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\MotionBlurModel.cs" />

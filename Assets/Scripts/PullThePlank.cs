@@ -22,17 +22,12 @@ public class PullThePlank : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(incorrect && x < -56)
+        if(incorrect && x < -56)                    //if the incorrect limit is reached start pulling the plank back
         {
+            //until the plank is pulled back to x == -56, shift the x by 0.02 every time update is called
             x = gameObject.transform.position.x + (float)0.02;
-            //print(z);
-            //gameObject.transform.position.Set(x, y, z);
             gameObject.transform.position = new Vector3(x, y, z);
         }
-        //if (anim != null)
-        //{
-        //    anim.Play("Base Layer.Wobble", 0,0);
-        //}
     }
 
     public void PullOut()
